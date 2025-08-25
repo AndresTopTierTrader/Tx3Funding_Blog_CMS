@@ -12,20 +12,8 @@ services:
         value: 0.0.0.0
       - key: PORT
         value: 1337
-      - key: DATABASE_CLIENT
-        value: postgres
-      - key: DATABASE_HOST
-        value: dpg-d2maaper433s73fnojm0-a
-      - key: DATABASE_PORT
-        value: 5432
-      - key: DATABASE_NAME
-        value: tx3funding_blog_cms
-      - key: DATABASE_USERNAME
-        value: tx3funding_blog_user
-      - key: DATABASE_PASSWORD
-        value: S5NfXqU88nBnUAHMn7QvNEmLlek2VklU
-      - key: DATABASE_SSL
-        value: true
+      - key: DATABASE_URL
+        value: postgresql://tx3funding_blog_user:S5NfXqU88nBnUAHMn7QvNEmLlek2VklU@dpg-d2maaper433s73fnojm0-a.ohio-postgres.render.com/tx3funding_blog_cms
       - key: APP_KEYS
         generateValue: true
         sync: false
