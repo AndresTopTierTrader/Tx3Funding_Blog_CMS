@@ -34,16 +34,24 @@ services:
         value: true
       - key: APP_KEYS
         generateValue: true
+        sync: false
       - key: API_TOKEN_SALT
         generateValue: true
+        sync: false
       - key: ADMIN_JWT_SECRET
         generateValue: true
+        sync: false
       - key: JWT_SECRET
         generateValue: true
+        sync: false
       - key: TRANSFER_TOKEN_SALT
         generateValue: true
+        sync: false
       - key: ENCRYPTION_KEY
         generateValue: true
+        sync: false
+      - key: URL
+        value: https://tx3funding-blog-cms.onrender.com
 
 databases:
   - name: tx3funding-blog-db
