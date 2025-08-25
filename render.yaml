@@ -3,7 +3,7 @@ services:
     name: tx3funding-blog-cms
     env: node
     plan: starter
-    buildCommand: npm install && npm run build
+    buildCommand: npm install && mkdir -p public/uploads && npm run build
     startCommand: npm start
     envVars:
       - key: NODE_ENV
@@ -47,6 +47,6 @@ services:
 
 databases:
   - name: tx3funding-blog-db
-    databaseName: tx3funding_blog
+    databaseName: tx3funding_blog_cms
     user: tx3funding_blog_user
     plan: starter
