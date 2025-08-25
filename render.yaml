@@ -8,8 +8,22 @@ services:
     envVars:
       - key: NODE_ENV
         value: production
+      - key: HOST
+        value: 0.0.0.0
+      - key: PORT
+        value: 1337
       - key: DATABASE_CLIENT
         value: postgres
+      - key: DATABASE_HOST
+        value: dpg-d2maaper433s73fnojmo-a
+      - key: DATABASE_PORT
+        value: 5432
+      - key: DATABASE_NAME
+        value: tx3funding_blog_cms
+      - key: DATABASE_USERNAME
+        value: tx3funding_blog_user
+      - key: DATABASE_PASSWORD
+        value: S5NfXqU88nBnUAHMn7QvNEmLlek2VklU
       - key: DATABASE_SSL
         value: true
       - key: APP_KEYS
@@ -32,9 +46,5 @@ services:
         sync: false
       - key: URL
         value: https://tx3funding-blog-cms.onrender.com
-
-databases:
-  - name: tx3funding-blog-db
-    databaseName: tx3funding_blog_cms
-    user: tx3funding_blog_user
-    plan: starter
+      - key: CORS_ORIGIN
+        value: https://tx3funding.com,http://localhost:3000

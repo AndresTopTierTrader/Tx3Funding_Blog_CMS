@@ -14,6 +14,7 @@ public/uploads/
 
 # Environment variables
 .env
+.cursorignore
 .env.*.local
 
 # IDE / OS files
