@@ -14,13 +14,32 @@
     "title": {
       "type": "string"
     },
+    "title_es": {
+      "type": "string"
+    },
     "tag": {
+      "type": "string"
+    },
+    "tag_es": {
       "type": "string"
     },
     "description": {
       "type": "text"
     },
+    "description_es": {
+      "type": "text"
+    },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "image_es": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [
@@ -34,6 +53,9 @@
       "type": "date"
     },
     "content": {
+      "type": "richtext"
+    },
+    "content_es": {
       "type": "richtext"
     },
     "author": {
