@@ -66,6 +66,21 @@
     },
     "slug": {
       "type": "text"
+    },
+    "Company": {
+      "type": "enumeration",
+      "enum": [
+        "funding",
+        "markets",
+        "cherrystrike"
+      ]
+    },
+    "Enviroment": {
+      "type": "enumeration",
+      "enum": [
+        "testing",
+        "production"
+      ]
     }
   }
 }

@@ -385,6 +385,9 @@ export interface ApiBlogBlog extends Struct.CollectionTypeSchema {
   };
   attributes: {
     author: Schema.Attribute.String;
+    Company: Schema.Attribute.Enumeration<
+      ['funding', 'markets', 'cherrystrike']
+    >;
     content: Schema.Attribute.RichText;
     content_es: Schema.Attribute.RichText;
     createdAt: Schema.Attribute.DateTime;
@@ -392,6 +395,7 @@ export interface ApiBlogBlog extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     description: Schema.Attribute.Text;
     description_es: Schema.Attribute.Text;
+    Enviroment: Schema.Attribute.Enumeration<['testing', 'production']>;
     image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     image_es: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
