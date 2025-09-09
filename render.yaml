@@ -30,6 +30,12 @@ services:
       - key: ENCRYPTION_KEY
         generateValue: true
         sync: false
+      - key: CLOUDINARY_NAME
+        value: dqaqwz10t
+      - key: CLOUDINARY_KEY
+        value: 134275763481823
+      - key: CLOUDINARY_SECRET
+        value: CJ-y3Y6E8BlLeRHlSO9dDSMOdy4
 
 databases:
   - name: tx3funding-blog-db

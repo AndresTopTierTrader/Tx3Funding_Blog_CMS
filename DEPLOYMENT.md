@@ -79,6 +79,13 @@ URL=https://your-app-name.onrender.com
 CORS_ORIGIN=https://your-frontend-domain.com,http://localhost:3000
 ```
 
+### Cloudinary Configuration (for file uploads)
+```
+CLOUDINARY_NAME=your-cloudinary-cloud-name
+CLOUDINARY_KEY=your-cloudinary-api-key
+CLOUDINARY_SECRET=your-cloudinary-api-secret
+```
+
 ## Step 4: Generate Security Keys
 
 You can generate random strings using:
