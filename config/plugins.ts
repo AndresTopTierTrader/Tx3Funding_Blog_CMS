@@ -1,8 +1,8 @@
 export default ({ env }) => {
   // Validate Cloudinary environment variables
-  const cloudinaryName = env('CLOUDINARY_NAME');
-  const cloudinaryKey = env('CLOUDINARY_KEY');
-  const cloudinarySecret = env('CLOUDINARY_SECRET');
+  const cloudinaryName = "dqaqwz10t"
+  const cloudinaryKey = "134275763481823"
+  const cloudinarySecret = "CJ-y3Y6E8BlLeRHlSO9dDSMOdy4"
 
   if (!cloudinaryName || !cloudinaryKey || !cloudinarySecret) {
     console.error('❌ Cloudinary configuration missing! Please check your environment variables:');
