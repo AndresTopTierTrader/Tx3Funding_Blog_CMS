@@ -1,7 +1,7 @@
 export default ({ env }) => {
   // Validate Cloudinary environment variables
   const cloudinaryName = "dmkzxsw0i"
-  const cloudinaryKey = "358241826452"
+  const cloudinaryKey = "358241826452777"
   const cloudinarySecret = "V1DnwGg1j_2Swsv0iNpaPi3j9Mw"
 
   if (!cloudinaryName || !cloudinaryKey || !cloudinarySecret) {
